@@ -578,14 +578,19 @@ img {
 }
 
 .rating__text {
+  font-weight: 600;
   font-size: 8px;
   line-height: 10px;
 }
 
-.rating__text__counter {
+.rating__counter {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__counter_max {
+  font-size: 10px;
 }
 
 @media (max-width: 1199px) {
