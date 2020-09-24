@@ -554,8 +554,24 @@ img {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.star {
+  margin-right: 3px;
+}
+
+.star:last-child {
+  margin-right: 0;
 }
 
 .offer {
@@ -656,16 +672,12 @@ img {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    margin-left: 140px;
   }
   .hotel {
     padding: 23px 0 60px 0;
-  }
-  .hotel-wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;

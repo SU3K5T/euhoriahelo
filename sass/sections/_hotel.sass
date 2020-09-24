@@ -15,8 +15,7 @@
 		&__offer
 			margin: 4px 0 0 14px
 		&__description
-			margin: 5px 0 
-
+			margin: 5px 0
 
 	&-description
 		font-size: 12px
@@ -29,7 +28,14 @@
 		text-transform: uppercase
 
 .stars
+	display: flex
 	flex-basis: 100%
+	align-items: center
+	flex-wrap: nowrap
+.star
+	margin-right: 3px
+	&:last-child
+		margin-right: 0
 
 .offer
 	padding: 4px 9px
