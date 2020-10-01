@@ -971,7 +971,10 @@ img {
     padding: 5px 0 40px 0;
   }
   .slider {
-    height: 250px;
+    height: 179px;
+  }
+  .map {
+    height: 172.94px;
   }
 }
 /*# sourceMappingURL=style.css.map */
