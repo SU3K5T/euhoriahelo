@@ -361,6 +361,13 @@ img {
   max-width: 100%;
 }
 
+.main-title {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -545,13 +552,6 @@ img {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
-}
-
-.hotel-name {
-  font-weight: 700px;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
 }
 
 .hotel-grid {
@@ -821,6 +821,101 @@ img {
   z-index: 1;
 }
 
+.newsletter {
+  position: relative;
+  background: url(../img/newsletter.jpg) center center/cover no-repeat;
+}
+
+.newsletter::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter__container {
+  position: relative;
+  padding: 98px 0 87px 0;
+  margin: auto;
+  max-width: 731px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 1;
+}
+
+.newsletter__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 70%;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.newsletter__title_strong {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: lowercase;
+}
+
+.newsletter__email {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 350px;
+  height: 55px;
+  outline: none;
+  border: none;
+}
+
+.newsletter__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 75px 0 33px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+}
+
+.newsletter__button {
+  height: 100%;
+  max-width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 18px 3px 18px;
+  background-color: #EC1F46;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -833,6 +928,10 @@ img {
 @media (max-width: 991px) {
   .container {
     max-width: 700px;
+  }
+  .newsletter__container {
+    max-width: 700px;
+    padding: 92px 0 93px 0;
   }
   .logo {
     width: 132px;
@@ -885,6 +984,12 @@ img {
   .container {
     width: 92%;
     max-width: 576px;
+  }
+  .newsletter__container {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__email {
+    width: 100%;
   }
   .navbar__search, .navbar__user, .navbar-menu {
     display: none;

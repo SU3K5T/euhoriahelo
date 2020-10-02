@@ -1,13 +1,18 @@
+// media for 1200px
 @media ( max-width: 1199px )
 	.container
 		max-width: 960px
-
 	.slider
 		width: 600px
 
+// media for 992px		
 @media ( max-width: 991px )
 	.container
 		max-width: 700px
+	.newsletter
+		&__container
+			max-width: 700px
+			padding: 92px 0 93px 0
 	.logo
 		width: 132px
 	.navbar
@@ -21,7 +26,6 @@
 			&__link
 				font-size: 12px
 				line-height: 15px
-
 	.hotel
 		&-grid
 			flex-direction: column
@@ -39,11 +43,16 @@
 		width: 100%
 	.map
 		width: 340px
-
+// media for 768px
 @media (max-width: 767px)
 	.container
 		width: 92%
 		max-width: 576px
+	.newsletter
+		&__container
+			padding: 76px 0 83px 0
+		&__email
+			width: 100%
 	.navbar
 		&__search, &__user, &-menu
 			display: none
@@ -94,13 +103,12 @@
 	.slider
 		height: 350px
 		margin-bottom: 20px
-
+// media for 576px
 @media (max-width: 575px)
 	.logo
 		width: 99px
 	.hotel
 		padding: 5px 0 40px 0
-
 	.slider
 		height: 179px
 	.map
