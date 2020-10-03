@@ -1,14 +1,5 @@
 .newsletter
 	position: relative
-	background: url(../img/newsletter.jpg) center (center/cover) no-repeat
-
-	&::after
-		content: ""
-		position: absolute
-		height: 100%
-		width: 100%
-		top: 0
-		background-color: rgba($dark, 0.8)
 
 	&__container
 		position: relative
@@ -19,7 +10,7 @@
 		justify-content: space-between
 		align-items: center
 		flex-wrap: wrap
-	
+
 		z-index: 1
 
 	&__title
@@ -70,3 +61,6 @@
 		font-weight: 700
 		font-size: 12px
 		line-height: 15px
+
+.parallax-window
+	background: rgba($dark, 0.8)

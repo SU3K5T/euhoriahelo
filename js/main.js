@@ -1,12 +1,12 @@
-var mySwiper = new Swiper(".swiper-container", {
+var hotelSlider = new Swiper(".swiper-container", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
 
     // Navigation arrows
     navigation: {
-        nextEl: ".slider-button_next",
-        prevEl: ".slider-button_prev",
+        nextEl: ".hotel-slider__button_next",
+        prevEl: ".hotel-slider__button_prev",
     },
 
     keyboard: {
@@ -44,4 +44,22 @@ ymaps.ready(function () {
         hintContent: "Grand Hilton Hotel",
     });
     map.geoObjects.add(myPlacemark);
+});
+
+var reviewsSlider = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".reviews-slider__button_next",
+        prevEl: ".reviews-slider__button_prev",
+    },
+
+    keyboard: {
+        enabled: false,
+    },
+
+    speed: 500,
 });
