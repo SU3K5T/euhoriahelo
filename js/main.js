@@ -63,3 +63,4 @@ var reviewsSlider = new Swiper(".swiper-container", {
 
     speed: 500,
 });
+
