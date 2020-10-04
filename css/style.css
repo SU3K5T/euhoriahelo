@@ -1242,7 +1242,6 @@ img {
   .reviews-slider__item {
     margin: 87px auto 50px auto;
     max-width: 100%;
-    min-height: 438px;
     padding: 0 31px 36px 31px;
   }
   .reviews-slider__button {
@@ -1281,25 +1280,7 @@ img {
     line-height: 23px;
   }
   .reviews-slider__item {
-    margin: 87px auto 50px auto;
-    max-width: 100%;
     min-height: 438px;
-    padding: 0 31px 36px 31px;
-  }
-  .reviews-slider__button {
-    top: 52px;
-  }
-  .reviews-slider__button_prev {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    margin-left: -85px;
-  }
-  .reviews-slider__button_next {
-    right: 50%;
-    -webkit-transform: translate(50%, 0);
-            transform: translate(50%, 0);
-    margin-right: -85px;
   }
   .reviews-slider__text {
     text-align: left;
