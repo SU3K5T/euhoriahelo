@@ -5,6 +5,8 @@
 	.hotel-slider
 		&__container
 			width: 600px
+	.card
+		width: 230px
 
 // media for 992px		
 @media ( max-width: 991px )
@@ -41,6 +43,7 @@
 			display: flex
 			justify-content: space-between
 	.reviews
+		padding: 40px 0 50px 0
 		&__title
 			font-size: 30px
 			line-height: 38px
@@ -48,7 +51,6 @@
 		&-slider
 			&__item
 				margin-top: 95px
-				margin-bottom: 50px
 				max-width: 579px
 				min-height: 300px
 				padding: 0 62px 30px 62px
@@ -60,6 +62,14 @@
 
 	.map
 		width: 340px
+	.activities
+		padding: 60px 0 70px 0
+	.card
+		width: 339px
+		&_media
+			margin-bottom: 20px
+			&:nth-last-child(-n+2)
+				margin-bottom: 0
 // media for 768px
 @media (max-width: 767px)
 	.container
@@ -136,7 +146,7 @@
 			line-height: 23px
 		&-slider
 			&__item
-				margin: 87px auto 50px auto
+				margin: 87px auto 0 auto
 				max-width: 100%
 				padding: 0 31px 36px 31px
 			&__button
@@ -149,6 +159,15 @@
 					right: 50%
 					transform: translate(50%, 0)
 					margin-right: -85px
+	.activities
+		padding: 40px 0 60px 0
+	.card
+		width: 100%
+		&_media
+			&:nth-last-child(2)
+				margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
 // media for 576px
 @media (max-width: 575px)
 	.logo
