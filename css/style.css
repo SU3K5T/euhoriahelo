@@ -1405,5 +1405,8 @@ img {
   .reviews-slider__text {
     text-align: left;
   }
+  .activities__title {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
