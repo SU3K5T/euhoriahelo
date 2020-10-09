@@ -1588,6 +1588,7 @@ img {
   background-color: #fff;
   width: 100%;
   height: 123px;
+  resize: none;
 }
 
 .footer__button {
@@ -1610,7 +1611,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 .footer__policy {
