@@ -64,3 +64,10 @@ var reviewsSlider = new Swiper(".swiper-container", {
     speed: 500,
 });
 
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+    console.log("Menu button has been clicked");
+    document
+        .querySelector(".navbar-bottom")
+        .classList.toggle("navbar-bottom_visible");
+});
