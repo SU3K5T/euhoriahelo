@@ -411,6 +411,10 @@ img {
   color: #ffffff;
 }
 
+.navbar-menu__item_mobile-visible {
+  display: none;
+}
+
 .navbar-menu__links {
   list-style-type: none;
   margin: 0;
@@ -987,6 +991,7 @@ img {
 }
 
 .package__about-text {
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1839,6 +1844,9 @@ img {
     grid-row: span 1;
     grid-column: span 2;
   }
+  .package__about-text {
+    margin-bottom: 15px;
+  }
   .package__image {
     height: 235px;
   }
@@ -2331,7 +2339,7 @@ img {
     margin-bottom: 6px;
   }
   .package__about-title {
-    margin-bottom: 1px;
+    margin-bottom: 8px;
   }
   .package__about-text {
     margin-bottom: 12px;
@@ -2488,9 +2496,6 @@ img {
   .package__about-mark {
     display: none;
   }
-  .package__about-title {
-    margin-bottom: 1px;
-  }
   .package__about-text {
     margin-bottom: 12px;
   }
@@ -2506,11 +2511,9 @@ img {
   }
   .package__about-oldprice_big {
     font-size: 10px;
-    margin: 0;
     margin-right: 12px;
   }
   .package__about-newprice_big {
-    margin: 0;
     font-size: 12px;
   }
   .footer__policy {

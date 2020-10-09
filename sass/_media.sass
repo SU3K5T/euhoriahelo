@@ -100,6 +100,10 @@
 			grid-template: 100% / 50% 50%
 			grid-row: span 1
 			grid-column: span 2
+		&__about
+			&-text
+				margin-bottom: 15px
+
 		&__image
 			height: 235px
 			&_big
@@ -225,6 +229,7 @@
 			outline: none
 			cursor: pointer
 			background-color: inherit
+			p
 			&__line
 				width: 16px
 				height: 1px
@@ -397,7 +402,7 @@
 			margin-bottom: 6px
 		&__about-title
 
-			margin-bottom: 1px
+			margin-bottom: 8px
 
 		// .package__about-text
 
@@ -489,13 +494,7 @@
 	.package
 		&__about-mark
 			display: none
-		&__about-title
-
-			margin-bottom: 1px
-
-
 		&__about-text
-
 			margin-bottom: 12px
 		// .package__about-info
 
@@ -505,10 +504,8 @@
 			flex-direction: column
 		&__about-oldprice_big 
 			font-size: 10px
-			margin: 0
 			margin-right: 12px
 		&__about-newprice_big
-			margin: 0
 			font-size: 12px
 	.footer
 		&__policy
