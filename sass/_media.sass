@@ -7,6 +7,19 @@
 			width: 600px
 	.card
 		width: 230px
+	.package
+		&_first
+			grid-row: 2 / 3
+			grid-column: 1 / 2
+		&_second
+			grid-row: 2 / 3
+			grid-column: 2 / 3
+		&_third
+			grid-row: 3 / 4
+			grid-column: 1 / 2
+		&_forth
+			grid-row: 3 / 4
+			grid-column: 2 / 3
 
 // media for 992px		
 @media ( max-width: 991px )
@@ -70,6 +83,27 @@
 			margin-bottom: 20px
 			&:nth-last-child(-n+2)
 				margin-bottom: 0
+	.packages
+		padding: 30px 0 20px 0
+		&__title
+			margin-bottom: 55px
+			font-size: 30px
+		&-wrapper
+			grid-template: repeat(3, 470px) / repeat(2, 320px)
+	.package
+		grid-template: repeat(2, 235px) / 100%
+		&_big
+			grid-template: 100% / 50% 50%
+			grid-row: span 1
+			grid-column: span 2
+		&__image
+			height: 235px
+			&_big
+				grid-row: 1 / 2
+				grid-column: 1 / 2
+				width: 100%
+				height: 100%
+
 // media for 768px
 @media (max-width: 767px)
 	.container
@@ -168,6 +202,46 @@
 				margin-bottom: 20px
 			&:last-child
 				margin-bottom: 0
+	.packages
+		padding: 20px 0 40px 0
+		&__title
+			margin-bottom: 40px
+		&-wrapper
+			grid-template: repeat(5, 470px) / repeat(1, 100%)
+			grid-gap: 30px 0
+	.package
+		grid-template: repeat(2, 235px) / 100%
+		&_big
+			grid-template: 100% / 40% 60%
+		&__about
+			padding: 20px 10px
+			&-text
+				font-size: 12px
+			&-book
+				justify-content: flex-end
+				flex-wrap: wrap
+				&-price
+					flex-direction: row
+					align-items: center
+			&-button
+				width: 100%
+			&-oldprice
+				margin-right: 5px
+			&-newprice
+				margin-bottom: 4px
+		&_first
+			grid-row: 2 / 3
+			grid-column: 1 / 2
+		&_second
+			grid-row: 3 / 4
+			grid-column: 1 / 2
+		&_third
+			grid-row: 4 / 5
+			grid-column: 1 / 2
+		&_forth
+			grid-row: 5 / 6
+			grid-column: 1 / 2
+
 // media for 576px
 @media (max-width: 575px)
 	.logo
@@ -192,3 +266,11 @@
 	.activities
 		&__title
 			font-size: 18px
+	.packages
+		&__title
+			margin-bottom: 20px
+			font-size: 18px
+		&__about
+			&-oldprice
+
+			&-newprice

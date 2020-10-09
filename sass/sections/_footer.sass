@@ -1,0 +1,147 @@
+.footer
+	padding: 108px 0 46px 0
+	background-color: $dark
+	color: $light
+	&-wrapper
+		display: grid
+		grid-template-columns: repeat(4, minmax(min-content, 1fr))
+		grid-auto-rows: minmax(40px, min-content)
+		grid-gap: 23px
+		align-items: start
+		justify-content: space-between
+	&__logo
+		width: 166px
+		grid-row: 1 / 3
+		align-self: center
+	&__categories
+		grid-row: 1 / 4
+	&__legal
+		justify-self: end
+	&__social
+		&-links
+			min-width: 83px
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&-network
+			display: flex
+			align-items: center
+			grid-row: 2 / 4
+			grid-column: 3 / 5
+	&__contact
+		&-details
+			grid-column: 1 / 3
+		&-form
+			grid-column: 3 / 5
+	&__form
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+	&__title
+		margin: 0 0 16px 0
+		padding: 0
+		font-style: normal
+		font-weight: bold
+		font-size: 18px
+		line-height: 23px
+		text-transform: uppercase
+		&_social
+			margin: 0 43px 0 0
+		&_contact
+			margin-bottom: 34px
+
+	&__ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+	&__item
+		display: flex
+		align-items: flex-start
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 160%
+		color: $footer-text-color
+		&-contact
+			margin-bottom: 20px
+	&__icon
+		&-wrapper
+			min-width: 40px
+	&__call
+		margin: 0
+
+	&__text
+		margin: 0
+		margin-bottom: 22px
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 160%
+		color: $footer-text-color
+	&__link
+		text-decoration: none
+		color: inherit
+	&__input
+		padding: 0 23px
+		height: 50px
+		border: none
+		border-radius: 4px
+		background-color: #fff
+		margin-bottom: 15px
+		flex-basis: 48%
+	&__message
+		padding: 18px 23px
+		margin-bottom: 22px
+		border: none
+		border-radius: 4px
+		background-color: #fff
+		width: 100%
+		height: 123px
+	&__button
+		min-height: 50px
+		min-width: 160px
+		padding: 18px 65px
+		background-color: $primary-color
+		border: none
+		border-radius: 4px
+		outline: none
+		font-style: normal
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		color: $light
+	&__info
+		font-style: normal
+		font-weight: bold
+		font-size: 12px
+		line-height: 15px
+		color: $footer-text-color
+	&__policy
+		grid-column: 2 / 4
+		align-self: end
+		margin-top: 102px
+		&-ul
+			display: flex
+			justify-content: center
+			padding: 0
+			margin: 0
+			list-style-type: none
+		&-item
+			margin-right: 14px
+			font-style: normal
+			font-weight: normal
+			font-size: 12px
+			line-height: 15px
+		&-link
+			color: inherit
+			text-decoration: none
+	&__services
+		grid-column: 4 / 5
+		justify-self: end
+		align-self: end
+	
