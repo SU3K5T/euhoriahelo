@@ -23,7 +23,7 @@
                             class="logo__image"
                         />
                     </a>
-                    <form action="#" class="search navbar__search">
+                    <form action="#" class="search navbar__search navbar__search_mobile-hidden">
                         <input
                             type="text"
                             class="search__input"
@@ -33,7 +33,7 @@
                             <img src="img/search.svg" alt="Icon: search" />
                         </button>
                     </form>
-                    <a href="#" class="user navbar__user">
+                    <a href="#" class="user navbar__user navbar__user_mobile-hidden">
                         <img
                             src="img/user-avatar.jpg"
                             alt="Avatar: Nathan"
@@ -56,6 +56,20 @@
                 <div class="container">
                     <nav class="navbar-menu">
                         <ul class="navbar-menu__links">
+                            <li class="navbar-menu__item navbar-menu__item_mobile-visible">
+                                <a href="#" class="user navbar__user">
+                                    <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                                    <span class="user__name">Nathan</span>
+                                </a>
+                            </li>
+                            <li class="navbar-menu__item navbar-menu__item_mobile-visible">
+                                <form action="#" class="search navbar__search">
+                                    <input type="text" class="search__input" placeholder="Search Location" />
+                                    <button class="search__button">
+                                        <img src="img/search.svg" alt="Icon: search" />
+                                    </button>
+                                </form>
+                            </li>
                             <li class="navbar-menu__item">
                                 <a href="#" class="navbar-menu__link"
                                     >All Deals</a
@@ -408,10 +422,10 @@
                             </div>
                             <div class="package__about-book">
                                 <div class="package__about-book-price">
-                                    <span class="package__about-oldprice"
+                                    <span class="package__about-oldprice package__about-oldprice_big"
                                         >$ 10,500</span
                                     >
-                                    <span class="package__about-newprice"
+                                    <span class="package__about-newprice package__about-newprice_big"
                                         >$ 8,500</span
                                     >
                                 </div>

@@ -70,4 +70,5 @@ menuButton.addEventListener("click", function () {
     document
         .querySelector(".navbar-bottom")
         .classList.toggle("navbar-bottom_visible");
+        
 });

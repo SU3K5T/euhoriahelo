@@ -117,7 +117,7 @@
 			height: 120px
 			width: 104px
 			margin-bottom: 38px
-	
+
 		&__social
 			&-network
 				grid-row: 1 / 2
@@ -185,12 +185,34 @@
 			right: 0
 			z-index: 5
 		&-menu
-			&__item 
+			&__item
 				margin-bottom: 20px
+				&_mobile-visible
+					display: block
 			&__links
 				flex-direction: column
 				align-items: center
 				justify-content: space-between
+		&__search
+			margin: 0
+			width: 243px
+			&_mobile-hidden
+				display: none
+		&__user
+			&_mobile-hidden
+				display: none
+
+	.user
+		flex-direction: column
+		margin: 0
+		align-items: center
+
+		&__name
+			margin: 0 0 7px 0
+			color: $light
+		&__avatar
+			margin-bottom: 10px
+
 	.menu
 		&-button
 			display: flex
@@ -370,6 +392,24 @@
 		&__title
 			margin-bottom: 20px
 			font-size: 18px
+	.package
+		&__about-mark
+			margin-bottom: 6px
+		&__about-title
+
+			margin-bottom: 1px
+
+		// .package__about-text
+
+		&__about-text
+
+			margin-bottom: 12px
+		// .package__about-info
+
+		&__about-info
+			margin-bottom: auto
+			display: flex
+			flex-direction: column
 	.footer
 		padding: 69px 0 21px 0
 		&-wrapper
@@ -446,6 +486,30 @@
 			justify-self: start
 			align-self: start
 @media (max-width: 320px)
+	.package
+		&__about-mark
+			display: none
+		&__about-title
+
+			margin-bottom: 1px
+
+
+		&__about-text
+
+			margin-bottom: 12px
+		// .package__about-info
+
+		&__about-info
+			margin-bottom: auto
+			display: flex
+			flex-direction: column
+		&__about-oldprice_big 
+			font-size: 10px
+			margin: 0
+			margin-right: 12px
+		&__about-newprice_big
+			margin: 0
+			font-size: 12px
 	.footer
 		&__policy
 			grid-column: 1
