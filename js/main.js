@@ -1,4 +1,5 @@
-var hotelSlider = new Swiper(".swiper-container", {
+$(document) .ready(function (){
+    var hotelSlider = new Swiper(".swiper-container", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -71,4 +72,28 @@ menuButton.addEventListener("click", function () {
         .querySelector(".navbar-bottom")
         .classList.toggle("navbar-bottom_visible");
         
+});
+
+    var modalButton = $("[data-toggle=modal]");
+    modalButton.on("click", openModal);
+    var modalClose = $(".modal__close");
+    modalClose.on("click", closeModal)
+
+    function openModal() {
+        var modalOverlay = $(".modal__overlay");
+        var modalDialog = $(".modal__dialog");
+        modalOverlay.addClass("modal__overlay_visible");
+        modalDialog.addClass("modal__dialog_visible");
+    }
+
+    function closeModal() {
+        var modalOverlay = $(".modal__overlay");
+        var modalDialog = $(".modal__dialog");
+        modalOverlay.removeClass("modal__overlay_visible");
+        modalDialog.removeClass("modal__dialog_visible");
+             
+    }
+
+
+
 });

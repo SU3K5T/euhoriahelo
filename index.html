@@ -319,7 +319,7 @@
                                 >
                             </div>
                             <!-- /.booking__call-center -->
-                            <button class="booking__button">
+                            <button data-toggle="modal" class="booking__button">
                                 View Other Options
                             </button>
                         </div>
@@ -690,11 +690,13 @@
                         >
                         Newsletter
                     </h1>
-                    <form action="#" class="newsletter__email">
+                    <form action="send.php" method="POST" class="newsletter__email">
                         <input
-                            type="email"
+                            type="text"
                             class="newsletter__input"
                             placeholder="Your email address"
+                            name="email"
+                            
                         />
                         <button class="newsletter__button">Send</button>
                     </form>
@@ -1201,20 +1203,23 @@
                             Send us a message
                         </h3>
                         <!-- /.footer__title -->
-                        <form action="#" class="footer__form">
+                        <form action="send.php" method="POST" class="footer__form">
                             <input
                                 type="text"
                                 class="input footer__input"
                                 placeholder="Your Full Name*"
+                                name="name"
                             />
                             <input
                                 type="text"
                                 class="input footer__input"
                                 placeholder="Phone Number*"
+                                name="phone"
                             />
                             <textarea
-                                class="footer__message"
+                                class="message footer__message"
                                 placeholder="Message"
+                                name="message"
                             ></textarea>
                             <button class="button footer__button">Send</button>
                             <!-- /.button footer__button -->
@@ -1262,11 +1267,39 @@
             <!-- /.container -->
         </footer>
         <!-- /.footer -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <!-- /.modal__overlay -->
+            <div class="modal__dialog">
+                <button class="modal__close">
+                    <img src="img/close-icon.svg" alt="Icon: Close" class="modal__close-icon">
+                </button>
+                <!-- /.modal__close -->
+                <h3 class="modal__title modal__title_contact">
+                    Booking
+                </h3>
+                <!-- /.modal__title -->
+                <form action="send.php" method="POST" class="modal__form">
+                    <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
+                    <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
+                    <input type="text" class="input modal__input" placeholder="Email*" name="email" />
+                    <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <!-- /.button modal__button -->
+                    <span class="modal__info">* Required Fields</span>
+                    <!-- /.modal__info -->
+                </form>
+                <!-- /.modal__form -->
+            </div>
+            <!-- /.modal__dialog -->
+        </div>
+        <!-- /.modal -->
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=6eb4367b-d2b7-48c2-b492-c51de4934b70&lang=en_US"
             type="text/javascript"
         ></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+        <script src="js/jquery-3.5.1.min.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/parallax.min.js"></script>
         <script src="js/main.js"></script>
