@@ -1501,6 +1501,10 @@ img {
   margin: 0;
   margin-bottom: 16px;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .footer__title_social {
