@@ -412,6 +412,14 @@ img {
   cursor: pointer;
 }
 
+label[class=invalid] {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 10px;
+  margin-bottom: -15px;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1183,7 +1191,6 @@ img {
 
 .newsletter__email {
   position: relative;
-  overflow: hidden;
   background-color: #ffffff;
   border-radius: 4px;
   width: 350px;
@@ -1201,6 +1208,8 @@ img {
   line-height: 18px;
   outline: none;
   border: none;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .newsletter__button {
@@ -1218,6 +1227,8 @@ img {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .parallax-window {
@@ -1666,6 +1677,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin: 0 0 15px 0;
   width: 47%;
 }
@@ -1817,7 +1832,7 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1825,12 +1840,16 @@ img {
 }
 
 .modal__message {
-  margin-bottom: 15px;
+  margin-top: 15px;
   width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1839,6 +1858,7 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  margin-top: 15px;
 }
 
 @media (max-width: 1199px) {
@@ -2097,7 +2117,7 @@ img {
     grid-column: 1 / 4;
     margin-bottom: 7px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2473,7 +2493,7 @@ img {
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2660,7 +2680,7 @@ img {
         -ms-flex-align: start;
             align-items: start;
   }
-  .footer__input {
+  .footer__input-group {
     width: 100%;
     min-height: 50px;
     max-height: 50px;
