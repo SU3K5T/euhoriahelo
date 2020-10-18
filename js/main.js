@@ -109,11 +109,15 @@ menuButton.addEventListener("click", function () {
                 email: "Format: name@domain.com"
             },
             phone: {
+
                 required: "Phone is required",
+                minlength: "Phone must be at least 10 characters",
             }
         }
     });
     })
-   $('.phone_with_ddd').mask('+7 (999) 999-99-99');
+   $('.phone_us').mask('+7 (999) 999-99-99');
+
+   AOS.init();
     
 });

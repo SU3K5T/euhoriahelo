@@ -384,6 +384,7 @@ img {
   border: none;
   border-radius: 4px;
   background-color: #fff;
+  outline: none;
 }
 
 .message {
@@ -418,6 +419,11 @@ label[class=invalid] {
   display: block;
   margin-left: 10px;
   margin-bottom: -15px;
+}
+
+input[class*=invalid] {
+  background-color: #ffd0d0;
+  border: 2px solid red;
 }
 
 .navbar {
