@@ -119,5 +119,6 @@ menuButton.addEventListener("click", function () {
    $('.phone_us').mask('+7 (999) 999-99-99');
 
    AOS.init();
-    
+
+
 });
